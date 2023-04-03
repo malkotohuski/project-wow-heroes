@@ -1,30 +1,30 @@
-.container-paladin {
+.container-druid {
     display:flex;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
   
-  .column-paladin {
+  .column-druid {
     padding: 30px;
     background-color: #0a0a0a33;
   }
 
-  .paladin-specialization {
+  .druid-specialization {
     text-align: center;
     background-color: rgb(8, 8, 8);
   }
 
-  .paladin-classInfo {
+  .druid-classInfo {
     text-align: center;
     background-color: rgb(8, 8, 8);
   }
 
-  .paladin-classInfo {
+  .druid-classInfo {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
   
-  .paladin-info {
+  .druid-info {
     padding: 30px;
     margin-bottom: none;
     background-color: grey;

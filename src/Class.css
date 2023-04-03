@@ -72,7 +72,9 @@
 .warrior,
 .mage,
 .druid,
-.hunter {
+.hunter,
+.priest,
+.rogue {
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: auto;
@@ -107,6 +109,16 @@
 .hunter {
     background-image: url('./images/Heroes/archer.jpg');
     background-position: 900px;
+}
+
+.priest {
+    background-image: url('./images/Heroes/pristtt.jpg');
+    
+}
+
+.rogue {
+    background-image: url('./images/Heroes/pristtt.jpg');
+    
 }
 
 h1.paladin-hero {

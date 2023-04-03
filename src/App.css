@@ -11,7 +11,13 @@
 .contact-us,
 .marketing,
 .consulting,
-.paladin-hero {
+.paladin-hero,
+.warrior-hero,
+.mage-hero,
+.druid-hero,
+.hunter-hero,
+.priest-hero,
+.rogue-hero {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -78,6 +84,36 @@
 
 .paladin-hero{
   background-image: url('./images//Heroes/arthas.avif');
+  align-items:normal
+}
+
+.warrior-hero {
+  background-image: url('./images/garrosh.jpg');
+  align-items:normal
+}
+
+.mage-hero {
+  background-image: url('./images/jainaaa.jpg');
+  align-items:normal
+}
+
+.druid-hero {
+  background-image: url('./images/Malf.jpg');
+  align-items:normal
+}
+
+.hunter-hero {
+  background-image: url('./images/tyrande-pic.jpg');
+  align-items:normal
+}
+
+.priest-hero {
+  background-image: url('./images/Priest.webp');
+  align-items:normal
+}
+
+.rogue-hero {
+  background-image: url('./images/Priest.webp');
   align-items:normal
 }
 

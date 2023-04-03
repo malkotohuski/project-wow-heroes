@@ -1,30 +1,30 @@
-.container-paladin {
+.container-priest {
     display:flex;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
   
-  .column-paladin {
+  .column-priest {
     padding: 30px;
     background-color: #0a0a0a33;
   }
 
-  .paladin-specialization {
+  .priest-specialization {
     text-align: center;
     background-color: rgb(8, 8, 8);
   }
 
-  .paladin-classInfo {
+  .priest-classInfo {
     text-align: center;
     background-color: rgb(8, 8, 8);
   }
 
-  .paladin-classInfo {
+  .priest-classInfo {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
   
-  .paladin-info {
+  .priest-info {
     padding: 30px;
     margin-bottom: none;
     background-color: grey;
