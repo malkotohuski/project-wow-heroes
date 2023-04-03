@@ -1,30 +1,30 @@
-.container-paladin {
+.container-hunter {
     display:flex;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
   
-  .column-paladin {
+  .column-hunter {
     padding: 30px;
     background-color: #0a0a0a33;
   }
 
-  .paladin-specialization {
+  .hunter-specialization {
     text-align: center;
     background-color: rgb(8, 8, 8);
   }
 
-  .paladin-classInfo {
+  .hunter-classInfo {
     text-align: center;
     background-color: rgb(8, 8, 8);
   }
 
-  .paladin-classInfo {
+  .hunter-classInfo {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
   
-  .paladin-info {
+  .hunter-info {
     padding: 30px;
     margin-bottom: none;
     background-color: grey;
