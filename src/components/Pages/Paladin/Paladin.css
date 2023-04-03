@@ -1,0 +1,11 @@
+.container-paladin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .column-paladin {
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
