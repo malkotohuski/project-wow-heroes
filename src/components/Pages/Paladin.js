@@ -8,7 +8,7 @@ import './Paladin/Paladin.css'
             <div className="container-paladin">
                 <div className="column-paladin">
                     <h2>Column 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis mauris vitae mi finibus feugiat. Aliquam euismod, nibh sit amet blandit fermentum, ex urna placerat metus, vel rhoncus velit metus at velit.</p>
+                    <p></p>
                 </div>
                 <div className="column-paladin">
                     <h2>Column 2</h2>
