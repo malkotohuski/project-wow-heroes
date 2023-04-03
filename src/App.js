@@ -14,7 +14,7 @@ import Marketing from './components/Pages/Marketing';
 import Consulting from './components/Pages/Consulting';
 import { Login } from './components/Pages/Login'
 import { Footer } from './components/Footer';
-import Paladin from './components/Pages/Paladin';
+import Paladin from './components/Pages/Paladin/Paladin';
 import { useState, useEffect, } from 'react';
 import * as HeroService from './services/HeroService';
 import { Catalog } from './components/Catalog/Catalog';
