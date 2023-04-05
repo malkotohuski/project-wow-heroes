@@ -19,7 +19,7 @@ export default function Home() {
 
                     {/* <!-- Display div: w ith information about every game (if any) --> */}
                     <div className="game">
-                        <div className="image-wrap">
+                        <div className="image-wrap-one">
                         
                         </div>
                         <h3>Shushkata</h3>
@@ -31,7 +31,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="game">
-                        <div className="image-wrap">
+                        <div className="image-wrap-two">
                         </div>
                         <h3>Illidan</h3>
                         <div className="rating">
@@ -42,7 +42,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="game">
-                        <div className="image-wrap">
+                        <div className="image-wrap-three">
                         </div>
                         <h3>Legulas</h3>
                         <div className="rating">
@@ -54,7 +54,7 @@ export default function Home() {
                     </div>
 
                     {/* <!-- Display paragr aph: If there is no games  --> */}
-                    <p className="no-articles">No games yet</p>
+                    <p className="no-articles">No heroes yet</p>
                 </div>
             </section>
         </>

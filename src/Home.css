@@ -80,7 +80,7 @@
     color: rgb(204, 144, 131);
 }
 
-.image-wrap {
+.image-wrap-one {
     width: 250px;
     height: 250px;
     display: inline-block;
@@ -88,10 +88,33 @@
     overflow: hidden;
     position: relative;
     text-align: center;
-    background-image: url(./images/Epic_paladin.webp);
+    background-image: url(./images/Heroes/pala.jpg);
+    background-size: 300px;
 }
 
+.image-wrap-two {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-image: url(./images/Heroes/warcraft-blizzard-paladin-arthas-.jpg);
+    background-size: 380px;
+}
 
+.image-wrap-three {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-image: url(./images/Heroes/desktop-800x450.jpg);
+    background-size: 420px;
+}
 
 .game>h3 {
     font-family: "Agency FB";
