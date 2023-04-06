@@ -7,17 +7,16 @@
 
 .home,
 .class,
-.products,
 .contact-us,
-.marketing,
-.consulting,
 .paladin-hero,
 .warrior-hero,
 .mage-hero,
 .druid-hero,
 .hunter-hero,
 .priest-hero,
-.rogue-hero {
+.rogue-hero
+.warlock-hero,
+.death-hero {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -62,26 +61,6 @@
   font-size: 100px;
 }
 
-
-
-.marketing {
-  background-image: url('./images/731985.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.consulting {
-  background-image: url('./images/731985.png');
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
 .paladin-hero{
   background-image: url('./images//Heroes/arthas.avif');
   align-items:normal
@@ -113,6 +92,16 @@
 }
 
 .rogue-hero {
+  background-image: url('./images/Priest.webp');
+  align-items:normal
+}
+
+.warlock-hero {
+  background-image: url('./images/Priest.webp');
+  align-items:normal
+}
+
+.death-hero {
   background-image: url('./images/Priest.webp');
   align-items:normal
 }
@@ -167,4 +156,17 @@ label {
   margin-bottom: 0rem
 }
 
+#hero-details{
+  background-color: black;
+}
 
+.main-details {
+  background-image: url(./images/heroes.webp);
+  background-size: 120%;
+  padding: 10px;
+}
+
+.footer {
+  margin-bottom: none;
+  margin-top: none;
+}

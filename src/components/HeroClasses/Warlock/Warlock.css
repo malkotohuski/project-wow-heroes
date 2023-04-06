@@ -1,0 +1,32 @@
+.container-warlock {
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .column-warlock {
+    padding: 30px;
+    background-color: #0a0a0a33;
+  }
+
+  .warlock-specialization {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .warlock-classInfo {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .warlock-classInfo {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .warlock-info {
+    padding: 30px;
+    margin-bottom: none;
+    background-color: grey;
+  }
+  

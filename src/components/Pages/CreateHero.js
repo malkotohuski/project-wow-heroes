@@ -37,10 +37,10 @@ export const CreateHero = ({
                         <label htmlFor="category"></label>
                         <input defaultValue={values.category} onChange={onChangeHandler} type="text" id="category" name="category" placeholder="Class" />
 
-                        <label htmlFor="levels">Level</label>
+                        <label htmlFor="levels" style={{color : '#fff'}}>Level</label>
                         <input defaultValue={values.maxLevel} onChange={onChangeHandler} type="number" id="maxLevel" name="maxLevel" min="1" max="80" placeholder="1" />
 
-                        <label htmlFor="game-img"></label>
+                        <label htmlFor="hero-img"></label>
                         <input defaultValue={values.imageUrl} onChange={onChangeHandler} type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..." />
 
                         <label htmlFor="summary"></label>
