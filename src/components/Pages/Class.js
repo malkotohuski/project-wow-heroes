@@ -52,6 +52,24 @@ export default function heroClass() {
                             <Link to='/class/rogue' className="datails-hero-button">Details</ Link>
                         </div>
                     </div>
+                    <div className="shaman">
+                        <div className="AllHeroes-info">
+                            <h2>Shaman</h2>
+                            <Link to='/class/shaman' className="datails-hero-button">Details</ Link>
+                        </div>
+                    </div>
+                    <div className="warlock">
+                        <div className="AllHeroes-info">
+                            <h2>Warlock</h2>
+                            <Link to='/class/warlock' className="datails-hero-button">Details</ Link>
+                        </div>
+                    </div>
+                    <div className="death">
+                        <div className="AllHeroes-info">
+                            <h2>Death Knight</h2>
+                            <Link to='/class/death' className="datails-hero-button">Details</ Link>
+                        </div>
+                    </div>
                 </div>
             </section>
 

@@ -1,0 +1,32 @@
+.container-death {
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .column-death {
+    padding: 30px;
+    background-color: #0a0a0a33;
+  }
+
+  .death-specialization {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .death-classInfo {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .death-classInfo {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .death-info {
+    padding: 30px;
+    margin-bottom: none;
+    background-color: grey;
+  }
+  

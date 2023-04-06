@@ -5,15 +5,17 @@ export const Catalog = ({
     _id,
 }) => {
     return (
-        <section _id="catalog-page">
-            <h1>All Heroes</h1>
+        <div className="catalog-heroes">
+            <section _id="catalog-page">
+                <h1>All Heroes</h1>
 
-            {hero.map(x => <CatalogInfo key={x._id} {...x} />)}
+                {hero.map(x => <CatalogInfo key={x._id} {...x} />)}
 
-            {hero.length === 0 && (
-                 <h3 className="no-articles">No articles yet</h3>
-            )}
-           
-        </section>
+                {hero.length === 0 && (
+                    <h3 className="no-articles">No articles yet</h3>
+                )}
+
+            </section>
+        </div>
     );
 };

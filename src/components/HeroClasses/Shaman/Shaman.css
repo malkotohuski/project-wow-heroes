@@ -1,0 +1,32 @@
+.container-shaman {
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .column-shaman {
+    padding: 30px;
+    background-color: #0a0a0a33;
+  }
+
+  .shaman-specialization {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .shaman-classInfo {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .shaman-classInfo {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .shaman-info {
+    padding: 30px;
+    margin-bottom: none;
+    background-color: grey;
+  }
+  

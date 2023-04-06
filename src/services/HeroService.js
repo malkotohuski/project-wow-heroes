@@ -9,10 +9,19 @@ export const getAll = async () => {
     return heroes;
 };
 
+export const getOne = async (heroId) => {
+    const result = await request.get(`${baseUrl}/${heroId}`);
+    
+    return result
+}
+
 export const create = async (heroData) => {
     const result = await request.post(baseUrl, heroData);
 
-    console.log(result);
-
     return result;
+}
+
+export const addComment = async (gameId, data) => {
+    const result = await request.post(`${baseUrl}/${gameId}/comments`, data);
+    return result
 }

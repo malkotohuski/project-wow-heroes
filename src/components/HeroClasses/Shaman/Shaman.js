@@ -1,32 +1,32 @@
 import React from 'react';
-import '../Druid/Druid.css'
+import '../Shaman/Shaman.css'
 
-function Druid() {
+function Shaman() {
     return (
 
-        <div className='main-druid-img'>
-            <h1 className='druid-hero'>Paladin</h1>
+        <div className='main-shaman-img'>
+            <h1 className='shaman-hero'>Paladin</h1>
             <div>
-                <div className='druid-classInfo'><h1>Class Info</h1>
-                    <div className='druid-info'>
+                <div className='shaman-classInfo'><h1>Class Info</h1>
+                    <div className='shaman-info'>
                         <p>Paladin talents increase their ability to heal the wounded, strengthen their capacity to protect their companions, and allow them to deal out vicious damage in the name of justice.</p>
                     </div>
                 </div>
-                <div className='druid-specialization'><h1>Specialization</h1></div>
-                <div className="container-druid">
-                    <div className="column-druid">
+                <div className='shaman-specialization'><h1>Specialization</h1></div>
+                <div className="container-shaman">
+                    <div className="column-shaman">
                         <h2>Holy</h2>
                         <p>
                             Invokes the power of the Light to heal and protect allies and vanquish evil from the darkest corners of the world. Preferred Weapon: Sword, Mace, and Shield.
                         </p>
                     </div>
-                    <div className="column-druid">
+                    <div className="column-shaman">
                         <h2>Retribution</h2>
                         <p>
                             A righteous crusader who judges and punishes opponents with weapons and Holy magic. Preferred Weapon: Two-Handed Sword, Mace, Axe.
                         </p>
                     </div>
-                    <div className="column-druid">
+                    <div className="column-shaman">
                         <h2>Protection</h2>
                         <p>
                             Uses Holy magic to shield themselves and defend allies from attackers. Preferred Weapon: Sword, Mace, Axe, and Shield.
@@ -39,4 +39,4 @@ function Druid() {
     );
 }
 
-export default Druid;
+export default Shaman;

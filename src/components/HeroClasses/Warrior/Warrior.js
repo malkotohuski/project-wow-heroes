@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Warrior/Warrior.css'
+import './Warrior.css'
 
 function Warrior() {
     return (

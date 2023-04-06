@@ -21,8 +21,6 @@
 
 .AllHeroes {
     background-color: #ffff;
-
-
 }
 
 .AllHeroes-info {
@@ -74,7 +72,10 @@
 .druid,
 .hunter,
 .priest,
-.rogue {
+.rogue,
+.shaman,
+.warlock,
+.death {
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: auto;
@@ -117,8 +118,20 @@
 }
 
 .rogue {
+    background-image: url('./images/Khu5PBjWAy2tApBXxD3HaR.jpg');
+}
+
+
+.shaman {
     background-image: url('./images/Heroes/pristtt.jpg');
-    
+}
+
+.warlock {
+    background-image: url('./images/Heroes/pristtt.jpg'); 
+}
+
+.death {
+    background-image: url('./images/Heroes/pristtt.jpg'); 
 }
 
 h1.paladin-hero {

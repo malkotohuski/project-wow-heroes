@@ -9,9 +9,9 @@ export const CatalogInfo = ({
 }) => {
     
     return (
-        <div className="allGames">
-            <div className="allGames-info">
-                <img src={imageUrl} />
+        <div className="allHeroes">
+            <div className="allHeroes-info">
+                <img src={imageUrl} alt='' />
                 <h6>{category}</h6>
                 <h2>{title}</h2>
                 <Link to={`/catalog/${_id}`} className="details-button">Details</Link>
