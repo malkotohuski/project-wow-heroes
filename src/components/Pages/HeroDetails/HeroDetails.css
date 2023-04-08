@@ -102,15 +102,16 @@
 
 .button {
     height: 15%;
-    background-color: #6f5d9c;
+    background-color: #778e9c;
     padding: 14px;
     margin-top: auto;
     font-size: 21px;
     color: rgb(0, 0, 0);
+    border-radius: 30px;
 }
 
 .button:hover {
-    background-color: #6f5d9c;
+    background-color: #2b299c;
     color: white;
 }
 
@@ -130,7 +131,8 @@
     color: #000;
 }
 
-textarea {
+.textarea {
     min-height: 1em
 }
+
 
