@@ -162,7 +162,7 @@ label {
 
 .main-details {
   background-image: url(./images/heroes.webp);
-  background-size: 120%;
+  background-size: cover;
   padding: 10px;
 }
 

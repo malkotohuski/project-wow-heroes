@@ -75,7 +75,7 @@ label[for="terms"]>input {
     font-size: 26px;
     cursor: pointer;
     font-weight: 900;
-    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    
     transition: 0.5s;
 }
 
@@ -109,7 +109,7 @@ label[for="terms"]>input {
 .login-bar{
     background-image: url(../../images/illidan\ and\ malfurion.jpg);
     background-position: center;
-    background-size: 120%;
+    background-size: 140%;
     overflow: hidden;
     padding: 320px;
     height: auto;
