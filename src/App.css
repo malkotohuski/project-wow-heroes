@@ -106,7 +106,7 @@
   align-items:normal
 }
 
-.Login-form-container {
+/* .Login-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +140,7 @@
   font-size: 24px;
   color: rgb(62, 64, 201);
   font-weight: 800;
-}
+} */
 
 label {
   font-size: 14px;
