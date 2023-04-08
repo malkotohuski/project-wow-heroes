@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import { Fragment } from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 import { useContext } from "react";
@@ -33,7 +32,7 @@ export const Login = () => {
                     <input type="password" id="login-password" name="password" />
                     <input type="submit" className="btn submit" value="Login" />
                     <p className="field">
-                        <span>If you don't have profile click <a href="#">here</a></span>
+                        <span>If you don't have profile click <Link to='/register'>here</Link></span>
                     </p>
                 </div>
             </form>
