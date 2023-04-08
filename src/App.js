@@ -17,6 +17,7 @@ import * as HeroService from './services/HeroService';
 import { Catalog } from './components/Catalog/Catalog';
 import { HeroDetails } from './components/Pages/HeroDetails/HeroDetails';
 import { UserContext } from './context/UserContext';
+import { Register } from './components/Register/Register';
 
 import Warrior from './components/HeroClasses/Warrior/Warrior';
 import Mage from './components/HeroClasses/Mage/Mage';
@@ -72,6 +73,7 @@ function App() {
                         <Route path='/create-hero' element={<CreateHero onCreateHeroSubmit={onCreateHeroSubmit} />} />
                         <Route path='/contact-us' element={<ContactUs />} />
                         <Route path='/login' element={<Login onLoginSubmit={onLoginSubmit} />} />
+                        <Route path='/register' element={<Register  />} />
                         <Route path='/catalog' element={<Catalog hero={hero} />} />
                         <Route path='/catalog/:heroId' element={<HeroDetails />} />
                         {/* heroes class --> */}
