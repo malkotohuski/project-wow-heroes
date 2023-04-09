@@ -14,6 +14,7 @@ import ContactUs from './components/Pages/ContactUs';
 import { Login } from './components/Pages/Login'
 import { Footer } from './components/Footer';
 import * as HeroService from './services/HeroService';
+import * as UserService from './services/UserService';
 import { Catalog } from './components/Catalog/Catalog';
 import { HeroDetails } from './components/Pages/HeroDetails/HeroDetails';
 import { UserContext } from './context/UserContext';
@@ -42,7 +43,6 @@ function App() {
     useEffect(() => {
         HeroService.getAll()
             .then(result => {
-                console.log(result);
                 setHero(result)
             })
     }, []);
@@ -56,24 +56,39 @@ function App() {
         navigate('./catalog');
     };
 
-    const onLoginSubmit = async (e) => {
-        e.preventDefault()
-       console.log(Object.fromEntries(new FormData(e.target)));
-    }
+    const onLoginSubmit = async (data) => {
+        try {
+            const result = await UserService.user(data);
+            setUser(result);
+
+            navigate('./create-hero');
+        } catch (error) {
+            alert("Your email or password is wrong!");
+        }
+
+    };
+
+    const context = {
+        onLoginSubmit,
+        userId: user._id,
+        token: user.accessToken,
+        userEmail: user.email,
+        isUserLogin: !!user.accessToken,
+    };
 
     return (
-        <UserContext.Provider value={{onLoginSubmit}}>
+        <UserContext.Provider value={context}>
             <div id='root'>
                 <Navbar />
 
-                <main in="main-content">
+                <main id="main-content">
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='/class' element={<Class />} />
                         <Route path='/create-hero' element={<CreateHero onCreateHeroSubmit={onCreateHeroSubmit} />} />
                         <Route path='/contact-us' element={<ContactUs />} />
                         <Route path='/login' element={<Login onLoginSubmit={onLoginSubmit} />} />
-                        <Route path='/register' element={<Register  />} />
+                        <Route path='/register' element={<Register />} />
                         <Route path='/catalog' element={<Catalog hero={hero} />} />
                         <Route path='/catalog/:heroId' element={<HeroDetails />} />
                         {/* heroes class --> */}
@@ -90,9 +105,8 @@ function App() {
                         {/* <Route path="*" element={<NotFound />} /> */}
                     </Routes>
                 </main>
-
-                <Footer />
             </div>
+           
         </UserContext.Provider>
     );
 

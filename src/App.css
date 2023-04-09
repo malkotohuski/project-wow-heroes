@@ -5,9 +5,7 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.home,
-.class,
-.contact-us,
+
 .paladin-hero,
 .warrior-hero,
 .mage-hero,
@@ -24,6 +22,7 @@
   font-size: 3rem;
 
 }
+
 
 .home {
   background-image: url('./images/731985.png');
@@ -167,6 +166,7 @@ label {
 }
 
 .footer {
-  margin-bottom: none;
-  margin-top: none;
+  background: rgb(68, 119, 119);
+  width: 100%;
+  padding: 5px;
 }

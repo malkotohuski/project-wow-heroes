@@ -67,21 +67,17 @@ export const HeroDetails = () => {
 
                         <p className="no-comment">No comments.</p>
                     </div>
-
-
                     <div className="buttons">
                         <Link to='Edit' className="button">Edit</Link>
                         <Link to='Delete' className="button">Delete</Link>
                     </div>
                 </div>
-
-
                 <article className="create-comment">
                     <label className='add-comment'>Add new comment:</label>
-                    <form className="form"  onSubmit={onCommentSubmit}>
-                    <input type="text" name="username" placeholder='MechoPanda' value={username} onChange={(e) => setUsername(e.target.value)} />
-                    <textarea name="comment" placeholder="Comment......" value={comment} onChange={(e) => setComment(e.target.value)}></textarea>
-                    <input className="btn submit" type="submit" value="Add Comment" />
+                    <form className="form" onSubmit={onCommentSubmit}>
+                        <input type="text" name="username" placeholder='MechoPanda' value={username} onChange={(e) => setUsername(e.target.value)} />
+                        <textarea name="comment" placeholder="Comment......" value={comment} onChange={(e) => setComment(e.target.value)}></textarea>
+                        <input className="btn submit" type="submit" value="Add Comment" />
                     </form>
                 </article>
 
