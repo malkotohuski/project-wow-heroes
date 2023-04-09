@@ -1,4 +1,4 @@
- const request = async (method, url, data) => {
+const request = async (method, url, data) => {
     const options = {};
 
     if (method !== "GET") {
@@ -12,15 +12,19 @@
         }
     }
 
-    const response = await fetch(url, options) 
-    
-    try {
-        const result = await response.json();
+    const response = await fetch(url, options);
 
-        return result;
-    } catch (error) {
-        return {}
+    if (response.status === 204) {
+        return {};
     }
+
+    const result = await response.json();
+
+    if (!response.ok) {
+        throw result;
+    }
+
+    return result;
 };
 
 export const get = request.bind(null, 'GET');

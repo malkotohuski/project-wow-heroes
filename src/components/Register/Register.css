@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.register-bar{
+/* .register-bar{
     background-image: url(../../images/illidan\ and\ malfurion.jpg);
     background-position: center;
     background-size: 140%;
@@ -15,4 +15,9 @@
     padding: 320px;
     height: auto;
     width: auto;
+} */
+
+.field{
+    margin-top: 20px;
+    margin-left: 100px;
 }
