@@ -5,15 +5,13 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-
 .paladin-hero,
 .warrior-hero,
 .mage-hero,
 .druid-hero,
 .hunter-hero,
 .priest-hero,
-.rogue-hero
-.warlock-hero,
+.rogue-hero .warlock-hero,
 .death-hero {
   display: flex;
   height: 90vh;
@@ -22,7 +20,6 @@
   font-size: 3rem;
 
 }
-
 
 .home {
   background-image: url('./images/731985.png');
@@ -42,67 +39,78 @@
   font-size: 100px;
 }
 
-.products {
+/* .products {
   background-image: url('./images/731985.png');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
-.contact-us {
+/* .contact-us {
   background-image: url('./images/731985.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
-.paladin-hero{
+.paladin-main {
   background-image: url('./images//Heroes/arthas.avif');
-  align-items:normal
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.warrior-hero {
-  background-image: url('./images/garrosh.jpg');
-  align-items:normal
+.warrior-main {
+  background-image: url('./images/Heroes/5271912.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.paladin-hero {
+  align-items: normal
 }
 
 .mage-hero {
   background-image: url('./images/jainaaa.jpg');
-  align-items:normal
+  align-items: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .druid-hero {
   background-image: url('./images/Malf.jpg');
-  align-items:normal
+  align-items: normal
 }
 
 .hunter-hero {
   background-image: url('./images/tyrande-pic.jpg');
-  align-items:normal
+  align-items: normal
 }
 
 .priest-hero {
   background-image: url('./images/Priest.webp');
-  align-items:normal
+  align-items: normal
 }
 
 .rogue-hero {
   background-image: url('./images/Priest.webp');
-  align-items:normal
+  align-items: normal
 }
 
 .warlock-hero {
   background-image: url('./images/Priest.webp');
-  align-items:normal
+  align-items: normal
 }
 
 .death-hero {
   background-image: url('./images/Priest.webp');
-  align-items:normal
+  align-items: normal
 }
 
 /* .Login-form-container {
@@ -147,7 +155,18 @@ label {
   color: rgb(34, 34, 34);
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #fff;
   font-weight: 500;
   line-height: 1.2;
@@ -155,18 +174,26 @@ label {
   margin-bottom: 0rem
 }
 
-#hero-details{
+#hero-details {
   background-color: black;
 }
 
-.main-details {
+* {
+  max-width: 1600px;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+
+/* .main-details {
   background-image: url(./images/heroes.webp);
   background-size: cover;
   padding: 10px;
-}
+} */
 
-.footer {
+/* .footer {
   background: rgb(68, 119, 119);
   width: 100%;
   padding: 5px;
-}
+} */
