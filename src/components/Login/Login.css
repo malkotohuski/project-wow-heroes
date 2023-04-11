@@ -121,7 +121,8 @@ label[for="terms"]>input {
 
 body {
     background-image: url(../../images//illidan\ and\ malfurion.jpg);
-  
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 

@@ -3,7 +3,7 @@ import './App.css';
 import './Class.css'
 import './components/CreateHero.css'// <-- !!!
 import { Routes, Route, useNavigate, } from 'react-router-dom';
-import { useState, useEffect, } from 'react';
+import { useState } from 'react';
 import React from 'react';
 
 import Navbar from './components/Navbar'
@@ -12,13 +12,15 @@ import Class from './components/Pages/Class';
 import { CreateHero } from './components/Pages/CreateHero';
 import ContactUs from './components/Pages/ContactUs';
 import { Login } from './components/Pages/Login'
-import { Footer } from './components/Footer';
-import * as HeroService from './services/HeroService';
-import * as UserService from './services/UserService';
+//import { Footer } from './components/Footer';
+import { heroServiceFactory } from './services/HeroService';
+import { userServiceFactory }  from './services/UserService';
 import { Catalog } from './components/Catalog/Catalog';
 import { HeroDetails } from './components/Pages/HeroDetails/HeroDetails';
 import { UserContext } from './context/UserContext';
 import { Register } from './components/Register/Register';
+import { Logout} from './components//Pages/Logout';
+
 
 import Warrior from './components/HeroClasses/Warrior/Warrior';
 import Mage from './components/HeroClasses/Mage/Mage';
@@ -39,14 +41,16 @@ function App() {
     const navigate = useNavigate()
     const [hero, setHero] = useState([]);
     const [user, setUser] = useState({});
+    const HeroService = heroServiceFactory(user.accessToken);
+    const UserService = userServiceFactory(user.accessToken);
 
-    useEffect(() => {
+/*     useEffect(() => {
         HeroService.getAll()
             .then(result => {
                 setHero(result)
             })
     }, []);
-
+ */
     const onCreateHeroSubmit = async (data) => {
 
         const newHero = await HeroService.create(data);
@@ -68,7 +72,33 @@ function App() {
 
     };
 
+    const onRegisterSubmit = async (values) => {
+        const {confirmPassword, ...registerData} = values;
+        if (confirmPassword !== registerData.password) {
+            alert("Confirm password does not match!!!")
+            return;
+           
+        }
+
+        try {
+            const result = await UserService.register(registerData);
+
+            setUser(result);
+            navigate('./create-hero');
+        } catch (error) {
+            alert("Your dont have Account");
+        }
+    };
+
+    const onLogout = async () => {
+        await UserService.logout(); 
+
+        setUser({});
+    };
+
     const context = {
+        onLogout,
+        onRegisterSubmit,
         onLoginSubmit,
         userId: user._id,
         token: user.accessToken,
@@ -91,6 +121,7 @@ function App() {
                         <Route path='/register' element={<Register />} />
                         <Route path='/catalog' element={<Catalog hero={hero} />} />
                         <Route path='/catalog/:heroId' element={<HeroDetails />} />
+                        <Route path='/logout' element={<Logout />} />
                         {/* heroes class --> */}
                         <Route path='/class/paladin' element={<Paladin />} />
                         <Route path='/class/warrior' element={<Warrior />} />
@@ -106,7 +137,7 @@ function App() {
                     </Routes>
                 </main>
             </div>
-           
+          
         </UserContext.Provider>
     );
 

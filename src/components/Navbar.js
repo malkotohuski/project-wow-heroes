@@ -11,7 +11,7 @@ function Navbar() {
     const [click, setClick] = useState(false);
     //const [dropdown, setDropdown] = useState(false);
 
-    const handleClick = () => setClick(!click);
+    //const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
     /*   const onMouseEnter = () => {
@@ -43,7 +43,7 @@ function Navbar() {
                             <div className='nav-item-logout'>
                                 <Link to='/create-hero' className='nav-links-create' onClick={closeMobileMenu}>Create Hero</Link>
                                 <span style={{ color: '#fff' }}>Hello {userEmail}</span>
-                                <div className='nav-item'> <Link to="/logout">Logout</Link></div>
+                                <div className='nav-item'> <Link to="/logout" style={{padding: 20}}>Logout</Link></div>
                             </div>
                         )}
                         {!isUserLogin && <li>

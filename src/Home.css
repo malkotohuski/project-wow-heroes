@@ -1,4 +1,4 @@
-#welcome-world {
+/* #welcome-world {
     width: auto;
     padding-right: 15px;
     padding-top: 7em;
@@ -7,9 +7,9 @@
     position: relative;
     box-sizing: border-box;
     text-align: center;
-}
+} */
 
-#welcome-world .welcome-message {
+/* #welcome-world .welcome-message {
     display: inline-block;
     z-index: 999;
     margin: 0 auto;
@@ -17,10 +17,12 @@
     top: 40%;
     text-align: center;
     width: 30%
-}
+} */
 
 #welcome-world{
     background-image: url(./images/Heroes/todor-hristov-17fpost.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .welcome-message h2 {

@@ -5,7 +5,7 @@ function Shaman() {
     return (
 
         <div className='main-shaman-img'>
-            <h1 className='shaman-hero'>Paladin</h1>
+            <h1 className='shaman-hero'>Shaman</h1>
             <div>
                 <div className='shaman-classInfo'><h1>Class Info</h1>
                     <div className='shaman-info'>

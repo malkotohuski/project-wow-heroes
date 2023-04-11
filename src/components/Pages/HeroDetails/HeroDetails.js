@@ -1,9 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../HeroDetails/HeroDetails.css';
-import * as HeroService from '../../../services/HeroService';
+import { heroServiceFactory } from '../../../services/HeroService'
 //import * as commentServies from '../../../services/commentServies';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useService } from '../../../hooks/useService';
 
 
 export const HeroDetails = () => {
@@ -11,13 +12,14 @@ export const HeroDetails = () => {
     const [comment, setComment] = useState('');
     const { heroId } = useParams();
     const [hero, setHero] = useState({});
+    const HeroService = useService(heroServiceFactory)
 
-    useEffect(() => {
+  /*   useEffect(() => {
         HeroService.getOne(heroId)
             .then(result => {
                 setHero(result);
             });
-    }, [heroId]);
+    }, [heroId]); */
 
     const onCommentSubmit = async (e) => {
         e.preventDefault();
