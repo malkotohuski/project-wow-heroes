@@ -1,15 +1,33 @@
 .container-warrior {
-    display:flex;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  display:flex;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: dimgray;
   }
   
   .column-warrior {
     padding: 30px;
     background-color: #0a0a0a33;
   }
+
   .warrior-specialization {
     text-align: center;
     background-color: rgb(8, 8, 8);
+  }
+
+  .warrior-classInfo {
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .warrior-classInfo {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .warrior-info {
+    padding: 30px;
+    margin-bottom: none;
+    background-color: grey;
   }
 

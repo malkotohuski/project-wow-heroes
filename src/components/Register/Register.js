@@ -1,24 +1,34 @@
 import React from "react";
 import '../Register/Register.css'
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { useForm } from "../../hooks/useForm";
+import { UserContext } from "../../context/UserContext";
 
 export const Register = () => {
+    const { onRegisterSubmit } = useContext(UserContext);
+    const {values, changeHandler, onSubmit} = useForm({
+        email:'',
+        password: '',
+        confirmPassword:''
+    }, onRegisterSubmit);
+
     return (
         <div className="register-bar">
             <section id="register-page" className="content auth">
-                <form id="register">
+                <form id="register" method="post" onSubmit={onSubmit} >
                     <div className="container">
                         <div className="brand-logo"></div>
                         <h1>Register</h1>
 
                         <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Shushkata@gmail.com" />
+                        <input type="email" id="email" name="email" placeholder="Shushkata@gmail.com" value={values.email} onChange={changeHandler} />
 
                         <label htmlFor="pass">Password:</label>
-                        <input type="password" name="password" id="register-password" />
+                        <input type="password" name="password" id="register-password" value={values.password} onChange={changeHandler} />
 
                         <label htmlFor="con-pass">Confirm Password:</label>
-                        <input type="password" name="confirm-password" id="confirm-password" />
+                        <input type="password" name="confirmPassword" id="confirm-password" value={values.confirmPassword} onChange={changeHandler} />
 
                         <input className="btn submit" type="submit" value="Register" />
 

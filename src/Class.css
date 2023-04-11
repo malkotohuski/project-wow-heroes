@@ -4,9 +4,8 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    padding: 20px;
-    height: auto;
-    width: auto;
+    background-repeat: no-repeat;
+    
 }
 
 #class-page>h1 {
@@ -136,5 +135,8 @@
 
 h1.paladin-hero {
     align-items: none;
+}
 
+h1.warrior-hero {
+    align-items: none;
 }
