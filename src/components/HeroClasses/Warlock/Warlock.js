@@ -5,7 +5,7 @@ function Warlock() {
     return (
 
         <div className='main-warlock-img'>
-            <h1 className='warlock-hero'>Paladin</h1>
+            <h1 className='warlock-hero'>Warlock</h1>
             <div>
                 <div className='warlock-classInfo'><h1>Class Info</h1>
                     <div className='warlock-info'>

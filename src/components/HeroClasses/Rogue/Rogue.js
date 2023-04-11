@@ -5,7 +5,7 @@ function Rogue() {
     return (
 
         <div className='main-rogue-img'>
-            <h1 className='rogue-hero'>Paladin</h1>
+            <h1 className='rogue-hero'>Rogue</h1>
             <div>
                 <div className='rogue-classInfo'><h1>Class Info</h1>
                     <div className='rogue-info'>
