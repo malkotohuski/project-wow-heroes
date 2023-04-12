@@ -11,14 +11,14 @@
 .druid-hero,
 .hunter-hero,
 .priest-hero,
-.rogue-hero .warlock-hero,
-.death-hero {
+.rogue-hero,
+.warlock-hero,
+.death-hero,
+.shaman-hero {
   display: flex;
   height: 90vh;
-  align-items: center;
   justify-content: center;
   font-size: 3rem;
-
 }
 
 .home {
@@ -85,32 +85,49 @@
 
 .druid-hero {
   background-image: url('./images/Malf.jpg');
-  align-items: normal
+  align-items: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .hunter-hero {
   background-image: url('./images/tyrande-pic.jpg');
-  align-items: normal
+  align-items: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .priest-hero {
   background-image: url('./images/Priest.webp');
-  align-items: normal
+  align-items: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .rogue-hero {
-  background-image: url('./images/Priest.webp');
-  align-items: normal
+  background-image: url('./images/rogue-wallpapaer.jpg');
+  align-items: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .warlock-hero {
-  background-image: url('./images/Priest.webp');
-  align-items: normal
+  background-image: url('./images/warlock-wallpaper.jpg');
+  align-items: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-
 .death-hero {
-  background-image: url('./images/Priest.webp');
-  align-items: normal
+  background-image: url('./images/dk-wallpaper.jpg');
+  align-items: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 /* .Login-form-container {

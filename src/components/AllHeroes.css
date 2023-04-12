@@ -80,6 +80,15 @@
     border-radius: 20px;
 }
 
+.catalog-heroes { 
+    background-image: url(../images/nigthElf-wallpapaer.jpg);
+    background-size: cover;
+    align-items: normal;
+    height:88vh;
+    
+  }
+
+
 /* .catalog-heroes{
     background-image: url(../images/heroes.webp);
     background-position: center;

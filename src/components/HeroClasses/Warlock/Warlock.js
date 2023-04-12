@@ -9,27 +9,36 @@ function Warlock() {
             <div>
                 <div className='warlock-classInfo'><h1>Class Info</h1>
                     <div className='warlock-info'>
-                        <p>Paladin talents increase their ability to heal the wounded, strengthen their capacity to protect their companions, and allow them to deal out vicious damage in the name of justice.</p>
+                        <h3>Channelers of Forbidden Powers</h3>
+                        <p>In the face of demonic power, most heroes see death. Warlocks see only opportunity.
+                            Dominance is their aim, and they have found a path to it in the dark arts.
+                            These voracious spellcasters summon demonic minions to fight beside them.
+                            Warlocks burn and destroy weakened foes with a combination of crippling illnesses and dark magic.
+                        </p>
                     </div>
                 </div>
                 <div className='warlock-specialization'><h1>Specialization</h1></div>
                 <div className="container-warlock">
                     <div className="column-warlock">
-                        <h2>Holy</h2>
+                        <h2>Affliction</h2>
                         <p>
-                            Invokes the power of the Light to heal and protect allies and vanquish evil from the darkest corners of the world. Preferred Weapon: Sword, Mace, and Shield.
+                            A master of shadow magic who specializes in drains and damage-over-time spells.
+                            Preferred Weapon: Staff, Wand, Dagger, Sword.
                         </p>
                     </div>
                     <div className="column-warlock">
-                        <h2>Retribution</h2>
+                        <h2>Demonology</h2>
                         <p>
-                            A righteous crusader who judges and punishes opponents with weapons and Holy magic. Preferred Weapon: Two-Handed Sword, Mace, Axe.
+                            A commander of demons who twists the souls of their army into devastating power.
+                            Preferred Weapon: Staff, Wand, Dagger, Sword.
+
                         </p>
                     </div>
                     <div className="column-warlock">
-                        <h2>Protection</h2>
+                        <h2>Destruction</h2>
                         <p>
-                            Uses Holy magic to shield themselves and defend allies from attackers. Preferred Weapon: Sword, Mace, Axe, and Shield.
+                            A master of chaos who calls down fire to burn and demolish enemies.
+                            Preferred Weapon: Staff, Wand, Dagger, Sword.
                         </p>
                     </div>
                 </div>

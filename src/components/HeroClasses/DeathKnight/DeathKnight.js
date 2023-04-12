@@ -4,31 +4,38 @@ import './DeathKnight.css'
 function DeathKnight() {
     return (
         <div className='main-death-img'>
-            <h1 className='death-hero'>Paladin</h1>
+            <h1 className='death-hero'>Death Knight</h1>
             <div>
                 <div className='death-classInfo'><h1>Class Info</h1>
                     <div className='death-info'>
-                        <p>Paladin talents increase their ability to heal the wounded, strengthen their capacity to protect their companions, and allow them to deal out vicious damage in the name of justice.</p>
+                        <h3>Heralds of Doom</h3>
+                        <p>When the Lich King’s control over his death knights was broken,
+                            his former champions found their new purpose as Knights of the Ebon Blade.
+                            After Bolvar Fordragon donned the helm to keep the undead Scourge contained,
+                            he called forth a new generation of death knights to join the Ebon Blade's cause.</p>
                     </div>
                 </div>
                 <div className='death-specialization'><h1>Specialization</h1></div>
                 <div className="container-death">
                     <div className="column-death">
-                        <h2>Holy</h2>
+                        <h2>Blood</h2>
                         <p>
-                            Invokes the power of the Light to heal and protect allies and vanquish evil from the darkest corners of the world. Preferred Weapon: Sword, Mace, and Shield.
+                            A dark guardian who manipulates and corrupts life energy to sustain themselves in the face of an enemy onslaught.
+                            Preferred Weapon: Two-Handed Axe, Mace, Sword.
                         </p>
                     </div>
                     <div className="column-death">
-                        <h2>Retribution</h2>
+                        <h2>Frost</h2>
                         <p>
-                            A righteous crusader who judges and punishes opponents with weapons and Holy magic. Preferred Weapon: Two-Handed Sword, Mace, Axe.
+                            An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.
+                            Preferred Weapons: Dual Axes, Maces, Swords.
                         </p>
                     </div>
                     <div className="column-death">
-                        <h2>Protection</h2>
+                        <h2>Unholy</h2>
                         <p>
-                            Uses Holy magic to shield themselves and defend allies from attackers. Preferred Weapon: Sword, Mace, Axe, and Shield.
+                            A master of death and decay, spreading infection and controlling undead minions to do their bidding.
+                            Preferred Weapon: Two-Handed Axe, Mace, Sword.
                         </p>
                     </div>
                 </div>

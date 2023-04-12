@@ -78,11 +78,11 @@
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: auto;
-    max-width: 800px;
+    max-width: 650px;
     margin: 30px;
     overflow: hidden;
     width: 900px;
-    min-height: 210px;
+    min-height: 100px;
     height: auto;
 }
 
