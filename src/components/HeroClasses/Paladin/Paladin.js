@@ -9,7 +9,13 @@ function Paldin() {
                 <div className='class-Paladin'>
                     <div className='paladin-classInfo'><h1>Class Info</h1>
                         <div className='paladin-info'>
-                            <p>Paladin talents increase their ability to heal the wounded, strengthen their capacity to protect their companions, and allow them to deal out vicious damage in the name of justice.</p>
+                        <h3>Paragons of Justice.</h3>
+                            <p>This is the call of the paladin: to protect the weak, to bring justice to the unjust,
+                                and to vanquish evil from the darkest corners of the world.
+                                These holy warriors are equipped with plate armor so they can confront the toughest of foes,
+                                and the blessing of the Light allows them to heal wounds and, in some cases, even restore life to the dead.
+                                Paladin talents increase their ability to heal the wounded, strengthen their capacity to protect their companions,
+                                and allow them to deal out vicious damage in the name of justice.</p>
                         </div>
                     </div>
                     <div className='paladin-specialization'><h1>Specialization</h1></div>

@@ -2,6 +2,7 @@
     display:flex;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    background-color: grey;
   }
   
   .column-shaman {
@@ -28,5 +29,12 @@
     padding: 30px;
     margin-bottom: none;
     background-color: grey;
+  }
+
+  .shaman-main {
+    background-image: url('../../../images/shaman-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
   

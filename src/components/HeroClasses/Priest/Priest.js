@@ -5,31 +5,39 @@ function Priest() {
     return (
 
         <div className='main-priest-img'>
-            <h1 className='priest-hero'>Paladin</h1>
+            <h1 className='priest-hero'>Priest</h1>
             <div>
                 <div className='priest-classInfo'><h1>Class Info</h1>
                     <div className='priest-info'>
-                        <p>Paladin talents increase their ability to heal the wounded, strengthen their capacity to protect their companions, and allow them to deal out vicious damage in the name of justice.</p>
+                        <h3>Invokers of Light and Darkness</h3>
+                        <p>Priests are devoted to the spiritual, and express their unwavering faith by serving the people.
+                            Priests use powerful healing magic to fortify themselves and their allies. They also wield powerful offensive spells from a distance,
+                            but can be overwhelmed by enemies due to their physical frailty and minimal armor.
+                        </p>
                     </div>
                 </div>
                 <div className='priest-specialization'><h1>Specialization</h1></div>
                 <div className="container-priest">
                     <div className="column-priest">
+                        <h2>Discipline</h2>
+                        <p>
+                            Uses magic to shield allies from taking damage as well as heal their wounds.
+                            Preferred Weapon: Staff, Wand, Dagger, Mace.
+
+                        </p>
+                    </div>
+                    <div className="column-priest">
                         <h2>Holy</h2>
                         <p>
-                            Invokes the power of the Light to heal and protect allies and vanquish evil from the darkest corners of the world. Preferred Weapon: Sword, Mace, and Shield.
+                            A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.
+                            Preferred Weapon: Staff, Wand, Dagger, Mace.
                         </p>
                     </div>
                     <div className="column-priest">
-                        <h2>Retribution</h2>
+                        <h2>Shadow</h2>
                         <p>
-                            A righteous crusader who judges and punishes opponents with weapons and Holy magic. Preferred Weapon: Two-Handed Sword, Mace, Axe.
-                        </p>
-                    </div>
-                    <div className="column-priest">
-                        <h2>Protection</h2>
-                        <p>
-                            Uses Holy magic to shield themselves and defend allies from attackers. Preferred Weapon: Sword, Mace, Axe, and Shield.
+                            Uses sinister Shadow magic and terrifying Void magic to eradicate enemies.
+                            Preferred Weapon: Staff, Wand, Dagger, Mace.
                         </p>
                     </div>
                 </div>

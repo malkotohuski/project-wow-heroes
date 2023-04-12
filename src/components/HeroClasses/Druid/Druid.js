@@ -5,31 +5,39 @@ function Druid() {
     return (
 
         <div className='main-druid-img'>
-            <h1 className='druid-hero'>Paladin</h1>
+            <h1 className='druid-hero'>Druid</h1>
             <div>
                 <div className='druid-classInfo'><h1>Class Info</h1>
                     <div className='druid-info'>
-                        <p>Paladin talents increase their ability to heal the wounded, strengthen their capacity to protect their companions, and allow them to deal out vicious damage in the name of justice.</p>
+                        <h3>Savage Shapeshifters</h3>
+                        <p>Druids harness the vast powers of nature to preserve balance and protect life.
+                            With experience, druids can unleash natures raw energy against their enemies,
+                            raining celestial fury on them from a great distance, binding them with enchanted vines,
+                            or ensnaring them in unrelenting cyclones.Druids are versatile combatants,
+                            in that they can fulfill nearly every role healing, tanking, and damage dealing.
+                        </p>
                     </div>
                 </div>
                 <div className='druid-specialization'><h1>Specialization</h1></div>
                 <div className="container-druid">
                     <div className="column-druid">
-                        <h2>Holy</h2>
+                        <h2>Balance</h2>
                         <p>
-                            Invokes the power of the Light to heal and protect allies and vanquish evil from the darkest corners of the world. Preferred Weapon: Sword, Mace, and Shield.
+                            Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.
+                            Preferred Weapon: Staff, Dagger, Mace.
                         </p>
                     </div>
                     <div className="column-druid">
-                        <h2>Retribution</h2>
+                        <h2>Feral</h2>
                         <p>
-                            A righteous crusader who judges and punishes opponents with weapons and Holy magic. Preferred Weapon: Two-Handed Sword, Mace, Axe.
+                            Takes on the form of a great cat to deal damage with bleeds and bites. Preferred Weapon: Staff, Polearm.
+                            Takes on the form of a mighty bear to absorb damage and protect allies. Preferred Weapon: Staff, Polearm.
                         </p>
                     </div>
                     <div className="column-druid">
-                        <h2>Protection</h2>
+                        <h2>Restoration</h2>
                         <p>
-                            Uses Holy magic to shield themselves and defend allies from attackers. Preferred Weapon: Sword, Mace, Axe, and Shield.
+                            Channels powerful Nature magic to regenerate and revitalize allies. Preferred Weapon: Staff, Dagger, Mace.
                         </p>
                     </div>
                 </div>
