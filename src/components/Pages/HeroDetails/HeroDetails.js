@@ -27,7 +27,7 @@ export const HeroDetails = () => {
         const result = await HeroService.addComment(heroId, {
             username,
             comment,
-        });
+        });details
 
         setHero(state => ({ ...state, comments: { ...state.comments, [result._id]: result } }));
         setUsername('');
@@ -58,13 +58,6 @@ export const HeroDetails = () => {
                                     <p>{x.username}: {x.comment}</p>
                                 </li>
                             ))}
-
-                            <li className="comment">
-                                <p>Content: I rate this one quite highly.</p>
-                            </li>
-                            <li className="comment">
-                                <p>Content: The best game.</p>
-                            </li>
                         </ul>
 
                         <p className="no-comment">No comments.</p>
