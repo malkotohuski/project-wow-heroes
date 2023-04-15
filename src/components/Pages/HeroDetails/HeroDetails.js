@@ -58,13 +58,6 @@ export const HeroDetails = () => {
                                     <p>{x.username}: {x.comment}</p>
                                 </li>
                             ))}
-
-                            <li className="comment">
-                                <p>Content: I rate this one quite highly.</p>
-                            </li>
-                            <li className="comment">
-                                <p>Content: The best game.</p>
-                            </li>
                         </ul>
 
                         <p className="no-comment">No comments.</p>

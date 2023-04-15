@@ -7,7 +7,7 @@
     border-radius: 10px;
     transition: all 0.4s;
     padding: 20px;
-
+    box-shadow: 0px 0px 20px 40px
 }
 
 #hero-details>h1 {
@@ -32,7 +32,7 @@
 
 .hero-header {
     position: relative;
-    padding: 55px;
+    
     height: 40%;
 }
 

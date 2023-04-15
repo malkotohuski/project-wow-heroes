@@ -191,10 +191,6 @@ h6 {
   margin-bottom: 0rem
 }
 
-#hero-details {
-  background-color: black;
-}
-
 * {
   max-width: 1600px;
   max-width: var(--maxWidth);
@@ -203,11 +199,12 @@ h6 {
 }
 
 
-/* .main-details {
+ .main-details {
   background-image: url(./images/heroes.webp);
   background-size: cover;
   padding: 10px;
-} */
+  height: 817px;
+} 
 
 /* .footer {
   background: rgb(68, 119, 119);
