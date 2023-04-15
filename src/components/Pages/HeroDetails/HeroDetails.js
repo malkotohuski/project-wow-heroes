@@ -27,7 +27,7 @@ export const HeroDetails = () => {
         const result = await HeroService.addComment(heroId, {
             username,
             comment,
-        });details
+        });
 
         setHero(state => ({ ...state, comments: { ...state.comments, [result._id]: result } }));
         setUsername('');
