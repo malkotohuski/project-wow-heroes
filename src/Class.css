@@ -87,7 +87,7 @@
 }
 
 .warrior {
-    background-image: url('./images/Heroes/HD-wallpaper-warcraft-world-of-warcraft-orc-warrior-world-of-warcraft.jpg');
+    background-image: url('./images/wallpaperflare-cropped.jpg');
     background-position: center;
 }
 
@@ -107,8 +107,7 @@
 }
 
 .hunter {
-    background-image: url('./images/Heroes/archer.jpg');
-    background-position: 900px;
+    background-image: url('./images/tyrandee.jpg');
 }
 
 .priest {
@@ -117,20 +116,20 @@
 }
 
 .rogue {
-    background-image: url('./images/Khu5PBjWAy2tApBXxD3HaR.jpg');
+    background-image: url('./images/rouges.jpg');
 }
 
 
 .shaman {
-    background-image: url('./images/Heroes/pristtt.jpg');
+    background-image: url('./images/shamy.jpg');
 }
 
 .warlock {
-    background-image: url('./images/Heroes/pristtt.jpg'); 
+    background-image: url('./images/warlock.jpg'); 
 }
 
 .death {
-    background-image: url('./images/Heroes/pristtt.jpg'); 
+    background-image: url('./images/DK.jpg'); 
 }
 
 h1.paladin-hero {

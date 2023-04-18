@@ -23,11 +23,10 @@
 .info-section {
     position: relative;
     width: 100%;
-    height: 100%;
-    background-blend-mode: multiply;
+    height: 386px;
     z-index: 2;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: #778e9c;
 }
 
 .hero-header {
@@ -112,7 +111,7 @@
 
 .button:hover {
     background-color: #2b299c;
-    color: white;
+    color: #000;
 }
 
 .add-comment {
@@ -132,7 +131,12 @@
 }
 
 .textarea {
-    min-height: 1em
+    min-height: 1em;
+}
+
+.placeholderName {
+    text-shadow: 0 0 black;
+    background-color: #778e9c;
 }
 
 

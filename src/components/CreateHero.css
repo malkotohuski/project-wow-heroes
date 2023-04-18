@@ -2,7 +2,7 @@
 #edit-page {
     position: relative;
     height: auto;
-    padding: 230px;
+    padding: 2px;
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0px 0px 32px 0px #32485e, -14px -14px 20px #191c21;
@@ -80,12 +80,11 @@ textarea#summary{
 } */
 
 textarea {
+    background-color: #778e9c;
     width: 80%;
     min-width: 20vw;
     border-radius: 0.7em;
     font-size: 26px;
-    border-bottom-color: #ecf0f3;
-    border-right-color: #ecf0f3;
     margin-top: 7px;
     color: black;
 }
