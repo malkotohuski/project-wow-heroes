@@ -1,6 +1,6 @@
 import { mainRequest } from './requester';
 
-const baseUrl = 'http://localhost:3030/jsonstore/comments';
+const baseUrl = 'http://localhost:3030/jsonstore/heroes';
 
 export const heroServiceFactory = (token) => {
     const request = mainRequest(token);

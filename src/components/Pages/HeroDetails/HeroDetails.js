@@ -3,23 +3,23 @@ import { Link } from 'react-router-dom';
 import '../HeroDetails/HeroDetails.css';
 import { heroServiceFactory } from '../../../services/HeroService'
 //import * as commentServies from '../../../services/commentServies';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useService } from '../../../hooks/useService';
 
 
 export const HeroDetails = () => {
     const [username, setUsername] = useState('');
-    const [comment, setComment] = useState('');
+    const [comment, setComment] = useState([]);
     const { heroId } = useParams();
     const [hero, setHero] = useState({});
     const HeroService = useService(heroServiceFactory)
 
-  /*   useEffect(() => {
+    useEffect(() => {
         HeroService.getOne(heroId)
             .then(result => {
                 setHero(result);
             });
-    }, [heroId]); */
+    }, [heroId]);  
 
     const onCommentSubmit = async (e) => {
         e.preventDefault();
@@ -59,8 +59,9 @@ export const HeroDetails = () => {
                                 </li>
                             ))}
                         </ul>
-
+                     {/*   {!Object.values(hero.comments).length && (
                         <p className="no-comment">No comments.</p>
+                       )} */}
                     </div>
                     <div className="buttons">
                         <Link to='Edit' className="button">Edit</Link>
@@ -68,9 +69,9 @@ export const HeroDetails = () => {
                     </div>
                 </div>
                 <article className="create-comment">
-                    <label className='add-comment'>Add new comment:</label>
+                    <label className='add-comment' >Add new comment:</label>
                     <form className="form" onSubmit={onCommentSubmit}>
-                        <input type="text" name="username" placeholder='MechoPanda' value={username} onChange={(e) => setUsername(e.target.value)} />
+                        <input type="text" className="placeholderName" name="username" placeholder='MechoPanda'  value={username} onChange={(e) => setUsername(e.target.value)} />
                         <textarea name="comment" placeholder="Comment......" value={comment} onChange={(e) => setComment(e.target.value)}></textarea>
                         <input className="btn submit" type="submit" value="Add Comment" />
                     </form>

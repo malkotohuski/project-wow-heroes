@@ -173,7 +173,7 @@
 
 .btn.details-btn:hover {
     background-color: rgb(192, 129, 117);
-    color: white;
+    color: #000;
 }
 
 #home-page>h1 {
