@@ -1,0 +1,17 @@
+.email-contact,
+.name-contact {
+    display:  flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center !important;
+    font-family: 'poppins',sans-serif;
+    align-items: center;
+}
+
+.constact-us { 
+    background-image: url(../../../images/Heroes/orgrimmar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 87vh;
+}

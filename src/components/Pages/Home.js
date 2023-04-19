@@ -27,7 +27,7 @@ export default function Home() {
                             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                         </div>
                         <div className="data-buttons">
-                            <Link to="#" className="btn details-btn">Details</Link>
+                            <Link to="/Shushkata" className="btn details-btn">Details</Link>
                         </div>
                     </div>
                     <div className="game">
