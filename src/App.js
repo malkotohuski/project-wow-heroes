@@ -32,6 +32,7 @@ import Rogue from './components/HeroClasses/Rogue/Rogue';
 import Shaman from './components/HeroClasses/Shaman/Shaman';
 import Warlock from './components/HeroClasses/Warlock/Warlock';
 import DeathKnight from './components/HeroClasses/DeathKnight/DeathKnight';
+import Shushkata from './components/HomeHeroes/Shushkata';
 
 
 
@@ -122,6 +123,7 @@ function App() {
                         <Route path='/catalog' element={<Catalog hero={hero} />} />
                         <Route path='/catalog/:heroId' element={<HeroDetails />} />
                         <Route path='/logout' element={<Logout />} />
+                        <Route path='/Shushkata' element={<Shushkata />} />
                         {/* heroes class --> */}
                         <Route path='/class/paladin' element={<Paladin />} />
                         <Route path='/class/warrior' element={<Warrior />} />
